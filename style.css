@@ -23,6 +23,7 @@ h1 {
     color:white;
     text-shadow: black 0 0 15px ;
     font-size: 44px;
+    text-align: center;
 }
 
 nav {
@@ -126,7 +127,7 @@ li:hover {
 }
 
 .profile-card {
-    width:35%;
+    width:40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,3 +232,195 @@ li:hover {
     text-align: justify;
     letter-spacing: 1px;
 }
+
+
+
+@media (max-width:945px) {
+
+    .profile-card {
+        width:50%;
+
+    
+    }
+    
+
+}
+    @media (max-width:768px) {
+
+        .hero-container {
+            padding: 25;
+        }
+
+        .profile-card {
+            width:60%;
+        }
+
+        header {
+        }
+        
+        nav {
+            box-shadow: gray 0px 2px 5px;
+            backdrop-filter: blur(15px);
+            width: 50vw;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+        
+        ul {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 10px;
+            list-style: none;
+        }
+        
+        li {
+            width: 100%;
+            font-family: 'oswald', sans-serif;
+            color: white;
+            font-size: 20px;
+            cursor:pointer;
+            transition: 1s;
+            text-align: center;
+        }
+        
+        li:hover {
+            transform: scale(0.97);
+            color: coral;
+            text-shadow: #fff 4px 1px 50px;
+        }
+        
+    }
+
+    @media(max-width:480px) {
+
+
+        .hero-container {
+            padding: 25;
+        }
+
+        
+        header {
+        }
+        
+        nav {
+            width: 80vw;
+        }
+        
+        .profile-card {
+            width:90%;
+        }
+        
+
+
+        .content-container {
+            height: 100vh;
+            background-color: #333;
+            box-shadow: black 0px -4px 25px;
+            display: flex;
+        }
+        
+        .profile-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .profile-contents {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .profile-card {
+            width:90%;
+            height: auto;
+            margin: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom: #555 1px solid;
+
+        }
+        
+        .profile-image {
+            width: 115px;
+            transition: linear 0.5s;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.3);
+            border: none;
+            border-radius: 5px;
+            box-shadow: black 1px 1px 5px;
+        }
+        
+        .text-name {
+            margin-top: 5px;
+        }
+        
+        .text-profile {
+            margin-top: 5px;
+            width: 95%;
+        }
+        
+        .profile-button {
+            margin-top: 9px;
+        }
+        
+        
+        .division01 {
+            width: 100% ;
+            height: 1px;
+            border-top: 1px #333 double;
+            border-bottom: 1px #333 double;
+            border-radius: 35%;
+            margin: 15px 0;
+            box-shadow: black 0px 3px 7px;
+        }
+        
+        .icons-container {
+            width: 100%;
+        }
+        
+        .icon-item {
+            width: 50px;
+            border-radius: 10px;
+            
+        }
+        
+        .division02 {
+            display: none;
+        }
+        
+        .container-sinopse {
+            margin-bottom: 15px;
+            background-color: white;
+            height: 50%;
+            width: 80%;
+            border-radius: 9px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .profile-sinopse {
+            color: #333;
+            width: 75%;
+            text-align: justify;
+            letter-spacing: 0;
+        }
+        
+
+        
+    }
+
+
+    
