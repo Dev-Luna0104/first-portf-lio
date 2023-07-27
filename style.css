@@ -225,12 +225,20 @@ li:hover {
 }
 
 .profile-sinopse {
+    height: 180px;
+    padding: 0 15px;
+    width: 55%;
     font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.3px;
     font-size: 16px;
     color: #fff;
-    width: 60%;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: gray 1px 1px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: justify;
-    letter-spacing: 1px;
 }
 
 
@@ -255,8 +263,6 @@ li:hover {
             width:60%;
         }
 
-        header {
-        }
         
         nav {
             box-shadow: gray 0px 2px 5px;
@@ -302,9 +308,6 @@ li:hover {
             padding: 25;
         }
 
-        
-        header {
-        }
         
         nav {
             width: 80vw;
