@@ -418,7 +418,9 @@ li:hover {
             color: #333;
             width: 75%;
             text-align: justify;
-            letter-spacing: 0;
+            letter-spacing: 0; 
+    backdrop-filter: none;
+    box-shadow: none;
         }
         
 
