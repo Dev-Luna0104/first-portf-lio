@@ -113,9 +113,9 @@ li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image:url("./pexels-garrett-morrow-1337247.jpg") ;
-    background-size: cover;
-    background-position: center;
+    background-image:url( "./pexels-rahul-716398.jpg") ;
+    background-size: 1050px;
+    background-position: 80% 53% ;
 }
 
 .profile-contents {
@@ -225,7 +225,7 @@ li:hover {
 }
 
 .profile-sinopse {
-    height: 180px;
+    height: 35cqb;
     padding: 0 15px;
     width: 55%;
     font-family: 'Oswald', sans-serif;
@@ -415,6 +415,8 @@ li:hover {
         }
         
         .profile-sinopse {
+            box-shadow: none;
+            backdrop-filter: none;
             color: #333;
             width: 75%;
             text-align: justify;
