@@ -1,6 +1,13 @@
 * {
+    text-decoration: none;
+    padding: 0;
     margin:0;
     background-color: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-container {
@@ -99,10 +106,18 @@ li:hover {
     -webkit-animation-delay: -0.5s;
 }
 
+
+
+
+
+
+
+
+
 .content-container {
     height: 100vh;
     background-color: #333;
-    box-shadow: black 0px -4px 25px;
+    box-shadow: black 0px -10px 25px;
     display: flex;
     justify-content: space-around;
 }
@@ -114,7 +129,8 @@ li:hover {
     align-items: center;
     justify-content: center;
     background-image:url( "./pexels-rahul-716398.jpg") ;
-    background-size: 1050px;
+    background-size: 1000px;
+    background-attachment: fixed;
     background-position: 80% 53% ;
 }
 
@@ -214,7 +230,7 @@ li:hover {
     border-left: 1px #555 solid;
     border-right: 1px #555 solid;
     border-radius: 90%;
-    /* box-shadow: white 0px 0px 2px; */
+    box-shadow: white 0px 0px 2px;
 }
 
 .container-sinopse {
@@ -225,7 +241,7 @@ li:hover {
 }
 
 .profile-sinopse {
-    height: 35cqb;
+    height: auto;
     padding: 0 15px;
     width: 55%;
     font-family: 'Oswald', sans-serif;
@@ -239,6 +255,215 @@ li:hover {
     justify-content: center;
     align-items: center;
     text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+.content-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    backface-visibility:hidden;
+    background-image: url("./fundo-form.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.project-container {
+    margin: 25px 0;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-contents {
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    row-gap: 25px;
+    column-gap: 40px;
+}
+
+.position-container {
+    width: 100%;
+    display: flex;
+}
+
+.right {
+    justify-content: flex-end
+}
+
+.left {
+    justify-content:flex-start;
+}
+
+.project-card {
+    width: 49%;
+    height: 245px;
+    background-color: black;
+    box-shadow: black 1px -1px 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 2vw;
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 1vw;
+
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+    
+    border-bottom-left-radius: 0vw;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 2vw;
+}
+
+.project-image {
+    width: auto;
+    height: 70%;
+    position: relative;
+    border-radius: 10px;
+    right: 25px;
+    top: 45px;
+    transition: 0.4s ;
+    box-shadow: black 0 0 15px;
+
+}
+
+.project-image:hover {
+    transform: scale(1.3);
+    box-shadow: gray 0 0 10px;
+    right: 150px;
+}
+
+
+.image-reverse {
+    left: 25px;
+    margin: 5px;
+    box-shadow: black 0 0 15px;
+} 
+
+.image-reverse:hover {
+    transform: scale(1.3);
+    left: 150px;
+    box-shadow: gray 0 0 10px;
+
+}
+
+
+.project-text {
+    margin: 10px;
+    text-align: justify;
+    height: 95%;
+    color: white;
+    font-family:'Oswald', sans-serif ;
+}
+
+
+
+
+
+
+
+
+
+
+.content-container-form {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./pexels-tyler-lastovich-699122.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: black 0px -5px 15px;
+}
+
+
+.container-form {
+    width: 40%;
+    height: 70vh;
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    border-top: white 0.2px solid;
+    border-left: white 0.2px solid;
+    box-shadow: black 5px 5px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Oswald', sans-serif ;
+}
+
+form {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ label {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+input {
+    width: 100%;
+    height: 20px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: #000 0px 0px 5px 1px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 30px;
+    min-height: 30px;
+    max-height: 120px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: #000 0px 0px 5px 1px;
+
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    margin-top: 25px;
+    background-color: #fff;
+    transition:0.5s;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+button:hover {
+    backdrop-filter: blur(5);
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(0.98);
+    letter-spacing: 5px;
+}
+
+.section03 {
+    height: 100vh;
 }
 
 
